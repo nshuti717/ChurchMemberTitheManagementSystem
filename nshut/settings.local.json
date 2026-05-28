@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\nshut\\\\Desktop\\\\Final project of Java\" /s /b)",
+      "Bash(psql -U postgres -d postgres -c \"SELECT COUNT\\(*\\) FROM members;\")",
+      "Bash(PGPASSWORD=1234 psql -U postgres -h 127.0.0.1 -p 5432 -d postgres -c \"\\\\dt\")",
+      "Bash(PGPASSWORD=1234 psql -U postgres -h 127.0.0.1 -p 5432 -c \"\\\\l\")",
+      "Bash(PGPASSWORD=1234 psql -U postgres -h 127.0.0.1 -p 5432 -d church_member_tithe_system_db -c \"SELECT COUNT\\(*\\) FROM member;\")",
+      "Bash(PGPASSWORD=1234 psql -U postgres -h 127.0.0.1 -p 5432 -d church_member_tithe_system_db -c \"SELECT COUNT\\(*\\) FROM cell_group;\")",
+      "Bash(PGPASSWORD=1234 psql -U postgres -h 127.0.0.1 -p 5432 -d church_member_tithe_system_db -c \"SELECT COUNT\\(*\\) FROM contribution; SELECT contribution_type, COUNT\\(*\\) FROM contribution GROUP BY contribution_type;\")",
+      "Bash(PGPASSWORD=1234 psql -U postgres -h 127.0.0.1 -p 5432 -d church_member_tithe_system_db -c \"SELECT COUNT\\(*\\) FROM church_service;\")",
+      "Bash(PGPASSWORD=1234 psql -U postgres -h 127.0.0.1 -p 5432 -d church_member_tithe_system_db -c \"SELECT contributiontype, COUNT\\(*\\) FROM contribution GROUP BY contributiontype;\")",
+      "Bash(PGPASSWORD=1234 psql -U postgres -h 127.0.0.1 -p 5432 -d church_member_tithe_system_db -c \"SELECT * FROM member;\")",
+      "Bash(PGPASSWORD=1234 psql -U postgres -h 127.0.0.1 -p 5432 -d church_member_tithe_system_db -c \"SELECT * FROM cell_group;\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\nshut\\\\Desktop\\\\Final project of Java\\\\\" -Directory)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\nshut\\\\Desktop\\\\Final project of Java\" -Recurse -Include *.java, *.form)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Sort-Object)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"import reportlab; print\\('ok'\\)\")",
+      "Bash(python -c \"import reportlab; print\\('ok'\\)\")",
+      "Bash(pip install *)",
+      "Bash(python make_viva_pdf.py)",
+      "Bash(python -c \"import os; s=os.path.getsize\\(r'C:\\\\Users\\\\nshut\\\\Desktop\\\\VIVA_STUDY_GUIDE.pdf'\\); print\\(f'{s//1024} KB, {s} bytes'\\)\")"
+    ]
+  }
+}
